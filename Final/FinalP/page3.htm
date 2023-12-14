@@ -1,0 +1,84 @@
+<html>
+  <head>
+   <title>Contact us page</title>
+<link rel="stylesheet" type="text/css" href="mainstyle.css" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+<script>
+	function getInformation() {
+var firstname = document.getElementById("fName").value;
+var lastname = document.getElementById("lName").value;
+var email = document.getElementById("Adress").value;
+let mark = document.getElementById("check").checked;
+
+if(firstname == "" || lastname == "" || email == "" || mark == false){
+
+
+	if(firstname == ""){
+	document.getElementById('fName').style="background-color:red";
+
+	}
+if(lastname == ""){
+	document.getElementById('lName').style="background-color:red";
+
+	}
+
+if(email == ""){
+	document.getElementById('Adress').style="background-color:red";
+
+	}
+if(mark == false){
+	document.getElementById('conditions').style="color:red";
+
+	}
+
+}
+
+else{
+
+window.alert("thank you")
+
+}
+
+
+}
+
+
+</script> 
+  </head>
+
+<body>
+<h1> Contac us</h1>
+
+
+
+   
+        
+        <form action="nextPage.html" type="POST">
+            First Name: <input type="text" id="fName";><br>
+            Last Name: <input type="text" id="lName"><br>
+            Email Adress <input type="text" id="Adress"><br>
+            
+        </form>
+<button id="mySubmit" onclick="getInformation();" >Submit</button>
+<h3 id="conditions">Do you execpt the Terms and coditions?</h3>
+<input type="checkbox" name="Terms" value="Terms" id="check"><br>
+
+
+<br /> 
+<h4 class="page">pages </h4>
+
+<a href="Homepage.htm">Home</a>
+<br />
+<a href="Page2.htm">Arts and Stories us</a>
+<br />
+<a href="Dodge.html">Dodge Game</a>
+
+
+<br />
+<a href="P5.html">Self-Portrait</a>
+<br />
+<a href="page4.html">Portfolio Final Project</a>
+    </body>
+
+</html>
